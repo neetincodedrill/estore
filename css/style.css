@@ -1,7 +1,7 @@
 *{
   padding:0;
   margin:0;
-  text-decoration:none;
+
   list-style:none;
   box-sizing: border-box;
   line-height: 1.6;
@@ -13,9 +13,56 @@
   margin-right: auto;
 }
 
+/* font-family*/
+@font-face {
+  font-family: themify-ttf;
+  src: url(../fonts/themify.ttf);
+}
+
+@font-face {
+  font-family: flaticon-woff;
+  src: url(../fonts/Flaticon.woff);
+}
+
+@font-face {
+  font-family: flaticon-tff;
+  src: url(../fonts/Flaticon.tff);
+}
+
+@font-face {
+  font-family: fa-solid-woff;
+  src: url(../fonts/fa-solid-900.woff);
+}
+
+@font-face {
+  font-family: fa-solid-tff;
+  src: url(../fonts/fa-solid-900.tff);
+}
+
+@font-face {
+  font-family: fa-regular-tff;
+  src: url(../fonts/fa-regular-400.ttf);
+}
+
+@font-face {
+  font-family: fa-regular-woff;
+  src: url(../fonts/fa-regular-400.woff);
+}
+
+ @font-face {
+  font-family: fa-brands-tff;
+  src: url(../fonts/fa-brands-400.ttf);
+}
+
+@font-face {
+  font-family: fa-brands-woff;
+  src: url(../fonts/fa-brands-400.woff);
+}
+
 /* top-bar css */
 .top-bar{
   background-color: black;
+  font-family: fa-brands-tff;
 }
 
 .user-info {
@@ -40,7 +87,8 @@
 }
 
 .country-info a{
-  padding-left:15px
+  padding-left:15px;
+  text-decoration:none;
 }
 
 .country-info p{
@@ -63,6 +111,7 @@
   padding: 10px 20px;
   border-radius: 10px;
   color: white;
+  text-decoration:none;
 }
   
 .user-info .content .link ul a.active1 ,.user-info .content .link ul a:hover {
@@ -80,11 +129,13 @@ nav{
   justify-content: space-between;
   align-items: center;
   min-height:100px;
+
 }
   
 nav .nav-list ul,nav .nav-right ul{
   display:flex;
   flex-direction: row;  
+
 }
 
 nav .nav-right ul{
@@ -98,10 +149,12 @@ nav .nav-right ul{
 .nav-list ul li{
   color:black;
   padding:0 15px;
+
 }
 
 .nav-list ul li a{
-  color:black
+  color:black;
+  text-decoration:none;
 }
 
 .nav-right li{
@@ -139,6 +192,7 @@ input:focus{
   text-align: center;
   padding: 10px 20px;
   border-radius: 20px;
+  text-decoration:none;
 }
 
 .heart-icon, .cart-icon{
@@ -171,7 +225,7 @@ input:focus{
   border-radius:30px;
   padding: 5px 7px;
   font-size:12px;
-  background-color: #0076ff;
+  background-color: #00b3ff;
   color: white;
 }
 
@@ -183,7 +237,7 @@ input:focus{
  border-radius: 30px;
  padding: 4px 6px;
  font-size:12px;
- background-color: #0076ff;
+ background-color: #00b3ff;
  color: white;
 }
 
@@ -256,7 +310,8 @@ header .nav-list ul .latest-span{
   margin-right:20px;
   font-size:18px;
   color:grey;
-  font-family:flaticon
+  font-family:flaticon;
+  text-decoration:none;
 }
 
 .listing-option ul a.active1 ,.listing-option ul a:hover {
@@ -281,7 +336,8 @@ label{
 
 .options a{
   font-size:15px;
-  color:grey
+  color:grey;
+  text-decoration:none;
 }
 
 select {
@@ -299,13 +355,12 @@ hr{
 
 /* greid css*/
 .image{
-  background-image: url(../images/product2.png);
+ 
   background-repeat: no-repeat;
   background-size: contain;
   min-width:300px;
   min-height:300px;
-  font-size: 15px;
-  text-align: left;
+  
   }
   
   .product-container{
@@ -345,7 +400,13 @@ hr{
       border-top: 1px solid rgb(220, 217, 217);
   }
   
-  .product1 .content p{
-     background-color: red;
+  .product1 .content {
+     border:1px solid red
+  }
+
+  .product-details span{
+    text-decoration-line: line-through; 
+    color:red;
+    padding-left:5px
   }
   
